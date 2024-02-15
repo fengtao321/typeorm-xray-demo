@@ -1,0 +1,29 @@
+{
+  "name": "typeorm-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc index.ts",
+
+    "esbuild": "esbuild index.ts --bundle --platform=node --outfile=dist/index.js --packages=external --format=esm",
+    "capture": "LAMBDA_TASK_ROOT=typical-aws-nonsense node capture.js",
+    "start": "npm run esbuild && LAMBDA_TASK_ROOT=typical-aws-nonsense node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.21",
+    "aws-sdk": "^2.1558.0",
+    "aws-xray-sdk": "^3.5.3",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.2.1",
+    "typeorm": "^0.3.20"
+  }
+}

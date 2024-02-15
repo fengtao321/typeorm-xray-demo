@@ -1,0 +1,9 @@
+{
+    "config": {
+      "user": "root",
+      "database": "course",
+      "password": "root",
+      "host": "localhost"
+    },
+    "table": "cars"
+  }
